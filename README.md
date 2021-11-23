@@ -2,7 +2,7 @@
 
 Available at https://www.ylesb.com/demos/bluetooth-printer/index.html
 
-<img src="https://raw.githubusercontent.com/webbluetoothcg/demos/gh-pages/bluetooth-printer/printer.jpg">
+<img src="https://github.com/CoderXGC/WebBluetooth-Printer/blob/master/printer.jpg">
 
 This web app demonstrates the use of the Web Bluetooth API for printing to a BLE printer.
 
