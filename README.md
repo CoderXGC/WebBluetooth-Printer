@@ -31,4 +31,4 @@ Please read and follow the steps in the CONTRIBUTING.md
 See LICENSE
 
 ## Google+
-Web Bluetooth Community on Google+: https://plus.google.com/communities/108953318610326025178
+
