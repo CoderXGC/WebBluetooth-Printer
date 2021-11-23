@@ -1,6 +1,6 @@
 # Web Bluetooth Printer
 
-Available at https://webbluetoothcg.github.io/demos/bluetooth-printer/
+Available at https://www.ylesb.com/demos/bluetooth-printer/index.html
 
 <img src="https://raw.githubusercontent.com/webbluetoothcg/demos/gh-pages/bluetooth-printer/printer.jpg">
 
