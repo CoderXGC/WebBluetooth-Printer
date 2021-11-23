@@ -1,0 +1,47 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BL</title>
+    </head>
+    <body>
+        <!-- 只有通过真实点击才能连接蓝牙 -->
+        <div onclick="blList()">bl</div>
+    </body>
+    <script>
+        // 定义连接蓝牙方法
+        async function blList() {
+            navigator.bluetooth
+                .requestDevice({
+                    // 蓝牙名称前缀
+                    filters: [{ namePrefix: "CS3" }],
+                    // 蓝牙uuid
+                    optionalServices: [0xfee7,0xfec7],
+                })
+                .then(async (device) => {
+                    console.log("Name:1 " + device.name, device);
+                    // 连接设备
+                    let server = await device.gatt.connect();
+                    console.log(`server2`, server);
+                    // 获取蓝牙uuid相关内容
+                    let service = await server.getPrimaryService(0xfee7);
+                    console.log(`service3`, service);
+                    // 获取可以读写字符流的服务
+                    let characteristic = await service.getCharacteristic(0xfec7);
+                    console.log(`characteristic4`, characteristic);
+                    // 写入字节(括号中的方法为把字符串转为字符流,传输给蓝牙)
+                    characteristic.writeValue(
+                        new Uint8Array(
+                            new TextEncoder("utf-8").encode("aaaaB")
+                        )
+                    );
+                })
+                .catch(function (error) {
+                    // 监听错误
+                    console.log("Something went wrong. " + error);
+                });
+        }
+        // blList();
+    </script>
+</html>
