@@ -30,5 +30,5 @@ Please read and follow the steps in the CONTRIBUTING.md
 ## License
 See LICENSE
 
-## Google+
-
+## Communication
+![Image text](https://i.loli.net/2021/11/29/pyIHGcArQ6DVid3.png)
