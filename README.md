@@ -31,4 +31,5 @@ Please read and follow the steps in the CONTRIBUTING.md
 See LICENSE
 
 ## Communication
+2.  -  **Contact-Email me :** [xgc（xgc@tom.com）](mailto:xgc@tom.com)
 ![Image text](https://i.loli.net/2021/11/29/pyIHGcArQ6DVid3.png)
